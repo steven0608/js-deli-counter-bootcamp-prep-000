@@ -13,5 +13,9 @@ function currentLine(line){
   if(line.length==0){
     return ("The line is currently empty.");
   }
-return ("The line is currently:"+line.length+". "+line)
+  const newLineFormat=[];
+  for (var i=0;i<line.length;i++){
+    newLineFormat.push(newLineFormat.length+". "+line);
+    return ("The line is currently:"+newLineFormat)
+  }
 }

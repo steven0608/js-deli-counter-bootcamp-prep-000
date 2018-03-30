@@ -15,7 +15,7 @@ function currentLine(line){
   }
   const newLineFormat=[];
   for (var i=0;i<line.length;i++){
-    newLineFormat.push(newLineFormat.length+". "+line);
+    newLineFormat.push(newLineFormat[i]+". "+line[i]);
     return ("The line is currently:"+newLineFormat)
   }
 }
